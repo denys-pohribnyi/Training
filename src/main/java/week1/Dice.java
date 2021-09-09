@@ -20,26 +20,18 @@ int die = random.nextInt(6) + 1;
 продвинулись на позицию 22» - это баг) */
     public static void main(String[] args) {
         Random rnd = new Random();
-        int[] field = new int[20];
-        for (int i = 0; i < field.length; i++) {
-            field[i] = i + 1;
-        }
-        for(int i : field) {
-            System.out.print(i + " ");
-        }
-        int pointsLeftToWin = 20;
-        int currentTry = 1;
-        int currentPlace = field[0];
-        int maxTries = 5;
-        for (int i = currentTry; i <= maxTries; i++) { // цикл попыток
-            for (int j = 0; j < field.length; j++) {   // бежим по полю
-                int roll = rnd.nextInt(6)+1;    // роллим кость
-                field[j] = field[roll];
-
-                System.out.println("Points left to win: "+ (field.length -currentPlace));
-                if(currentPlace == field.length){
-                    System.out.println("Congratulations! You win!");
-                }
+        // Создать пустой массив на 20 (значения будут нулл)
+        int[] arr = new int[5];
+        int sum = 0;
+        int leftStepsToWin = 20;
+        for (int i = 0; i < arr.length; i++) {
+            int r = rnd.nextInt(6)+1;
+            sum = arr[i] + r;
+            leftStepsToWin = leftStepsToWin - sum;
+            System.out.println("The rolling stone shows "+sum);
+            System.out.println(leftStepsToWin+" steps left to win");
+            if(sum == 20){
+                System.out.println("Winner");
             }
         }
     }
