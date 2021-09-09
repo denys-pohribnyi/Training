@@ -9,7 +9,6 @@ public class Task5 {
         System.out.println("Task 5");
         System.out.println("Enter some text to reverse it");
         String s = scanner.nextLine();
-        System.out.println("You've entered: "+s);
         char[] array = s.toCharArray();
         int x = array[0];
         int z = array[array.length-1];
