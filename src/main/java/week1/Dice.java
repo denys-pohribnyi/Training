@@ -39,3 +39,10 @@ int die = random.nextInt(6) + 1;
         }
     }
 }
+/*
+The rolling stone shows 3. 17 steps left to win
+The rolling stone shows 6. 11 steps left to win
+The rolling stone shows 3. 8 steps left to win
+The rolling stone shows 4. 4 steps left to win
+The rolling stone shows 4. 0 steps left to win
+Congratulations! You win!*/
