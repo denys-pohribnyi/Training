@@ -23,16 +23,22 @@ int die = random.nextInt(6) + 1;
         // Создать пустой массив на 20 (значения будут нулл)
         int[] arr = new int[5];
         int sum = 0;
+        int currentPlace = 0;
         int leftStepsToWin = 20;
         for (int i = 0; i < arr.length; i++) {
             int r = rnd.nextInt(6)+1;
             sum = arr[i] + r;
             leftStepsToWin = leftStepsToWin - sum;
-            System.out.println("The rolling stone shows "+sum);
-            System.out.println(leftStepsToWin+" steps left to win");
-            if(sum == 20){
-                System.out.println("Winner");
+            currentPlace = currentPlace+sum;
+            System.out.println("The rolling stone shows "+sum+". "+leftStepsToWin+" steps left to win");
+            if(leftStepsToWin == 0){
+                System.out.println("Congratulations! You win!");
+            }else if(currentPlace > 20){
+                System.out.println("Sorry, you loose");
+                break;
             }
-        }
+
+        }// current place
+        // if steps < 0 - break + sout "loose"
     }
 }
