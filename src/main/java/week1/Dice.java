@@ -37,9 +37,6 @@ int die = random.nextInt(6) + 1;
                 field[j] = field[roll];
 
                 System.out.println("Points left to win: "+ (field.length -currentPlace));
-                if(currentPlace > field.length || currentPlace < field.length){
-                    System.out.println("You loose");
-                }
                 if(currentPlace == field.length){
                     System.out.println("Congratulations! You win!");
                 }
