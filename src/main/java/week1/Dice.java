@@ -20,7 +20,6 @@ int die = random.nextInt(6) + 1;
 продвинулись на позицию 22» - это баг) */
     public static void main(String[] args) {
         Random rnd = new Random();
-        // Создать пустой массив на 20 (значения будут нулл)
         int[] arr = new int[5];
         int sum = 0;
         int currentPlace = 0;
@@ -37,8 +36,6 @@ int die = random.nextInt(6) + 1;
                 System.out.println("Sorry, you loose");
                 break;
             }
-
-        }// current place
-        // if steps < 0 - break + sout "loose"
+        }
     }
 }
