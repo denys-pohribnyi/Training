@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Task1 {
     public static void main(String[] args) {
-
 // Написать программу, которая находит минимальное значение в массиве
         System.out.println("Task 1");
         Random random = new Random();

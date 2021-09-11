@@ -9,21 +9,27 @@ public class Task4 {
         System.out.println("Please, enter some word to check palindrome");
         Scanner scanner = new Scanner(System.in);
         String x = scanner.nextLine();
-        System.out.println("You've entered "+x);
+        System.out.println("You've entered " + x);
         System.out.println("Checking...");
         char[] array = x.toCharArray();
-
-        int first = array[0];
-        int last = array[array.length-1];
-        while(first<last){
-
-                if(first != last){
-                    System.out.println("It is not palindrome");
-                    break;
-                }
-
-            first++;
-            last--;
+        boolean truefalse;
+        truefalse = palindromeCheck(array);
+        if(!truefalse){
+            System.out.println("This text is not palindrome!");
+        }else{
+            System.out.println("This text is palindrome!!");
         }
+    }
+
+    public static boolean palindromeCheck(char[] array) {
+        int a = 0;
+        int b = array.length - 1;
+        while(b > a){
+            if(array[a] != array[b])
+                return false;
+            a++;
+            b--;
+        }
+        return true;
     }
 }
