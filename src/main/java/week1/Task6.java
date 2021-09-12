@@ -22,14 +22,6 @@ public class Task6 {
         for (int i = 0; i < arr.length; i++) {  // Просто распечатаем созданный массив
             System.out.print(arr[i]+" ");
         }
-        // Пробежимся по массиву и поделим каждое число на 2 и на 3
-        for (int i = 0; i < arr.length; i++) {
-
-        }
-
-
-
-
 
     }
 }

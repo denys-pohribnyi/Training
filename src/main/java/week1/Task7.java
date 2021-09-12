@@ -15,11 +15,13 @@ public class Task7 {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        int a = 0;
+        int b = arr.length-1;
         for (int i = 0; i < arr.length; i++) {
-          //  arr[i] =
-        }
 
-        String str = arr.toString();
-        System.out.println(str);
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+ " ");
+        }
     }
 }
