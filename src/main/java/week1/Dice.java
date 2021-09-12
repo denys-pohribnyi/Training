@@ -38,6 +38,7 @@ public class Dice {
                 break;
             }else if(i>=4 && leftStepsToWin == 0){
                 System.out.println("Winner!");
+                break;
             }
         }
     }
@@ -57,7 +58,7 @@ public class Dice {
 //Sorry, you loose, because max quantity of tries is 5 -_-
 //-------------------------------------------------------------------
 //Try #1 The rolling stone shows 5. You are on 5 place. 15 steps left to win
-//Try #2 The rolling stone shows 3. You are on 8 place. 12 steps left to win
-//Try #3 The rolling stone shows 6. You are on 14 place. 6 steps left to win
-//Try #4 The rolling stone shows 6. You are on 20 place. 0 steps left to win
-//Try #5 You loose! Your dice is 2 but maximum range on this field is 20.
+//Try #2 The rolling stone shows 6. You are on 11 place. 9 steps left to win
+//Try #3 The rolling stone shows 5. You are on 16 place. 4 steps left to win
+//Try #4 The rolling stone shows 1. You are on 17 place. 3 steps left to win
+//Try #5 You loose! Your dice is 4 but maximum range on this field is 20.
