@@ -10,8 +10,6 @@ public class Task5 {
         System.out.println("Enter some text to reverse it");
         String s = scanner.nextLine();                      // Запишем вводимый текст в переменную
         char[] array = s.toCharArray();                     // Преобразуем в массив символов
-        int x = array[0];                                   // Создадим переменную первого элемента массива
-        int z = array[array.length-1];                      // И переменную последнего элемента
         String reversed = "";                               // Создадим строку в которую запишем результат
         for (int i = array.length-1; i >= 0 ; i--) {        // Пробежимся по массиву с конца
             reversed = reversed + array[i];                 // И перепишем каждый элемент на место последующего
