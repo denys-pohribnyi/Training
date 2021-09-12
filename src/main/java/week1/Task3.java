@@ -11,7 +11,7 @@ public class Task3 {
         isSorted = true;
         for (int i = 0; i < ar.length -1; i++) {        // Пробежимся по массиву
             if(ar[i] > ar[i+1]){                        // Сравниваем элементы
-                temp = ar[i];                           // Свапаем
+                temp = ar[i];                           // Свапаем используя временную переменную чтобы не перезаписывать значение поверх предыдущего
                 ar[i] = ar[i+1];
                 ar[i+1] = temp;
                 isSorted = false;
@@ -23,3 +23,4 @@ public class Task3 {
     }
 }
 }
+//1 2 3 4 5 6 7 8 9

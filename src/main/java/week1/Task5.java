@@ -8,14 +8,17 @@ public class Task5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Task 5");
         System.out.println("Enter some text to reverse it");
-        String s = scanner.nextLine();
-        char[] array = s.toCharArray();
-        int x = array[0];
-        int z = array[array.length-1];
-        String reversed = "";
-        for (int i = array.length-1; i >= 0 ; i--) {
-            reversed = reversed + array[i];
+        String s = scanner.nextLine();                      // Запишем вводимый текст в переменную
+        char[] array = s.toCharArray();                     // Преобразуем в массив символов
+        int x = array[0];                                   // Создадим переменную первого элемента массива
+        int z = array[array.length-1];                      // И переменную последнего элемента
+        String reversed = "";                               // Создадим строку в которую запишем результат
+        for (int i = array.length-1; i >= 0 ; i--) {        // Пробежимся по массиву с конца
+            reversed = reversed + array[i];                 // И перепишем каждый элемент на место последующего
         }
         System.out.println("Reversed text is: "+ reversed);
     }
 }
+//Enter some text to reverse it
+//Some input text for example
+//Reversed text is: elpmaxe rof txet tupni emoS

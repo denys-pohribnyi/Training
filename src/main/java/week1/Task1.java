@@ -31,3 +31,5 @@ public class Task1 {
         System.out.println("The lowest number in array is: " + minValue);  // Выведем на экран результат
     }
 }
+//74 54 78 79 88 89 11 36 23 102
+//The lowest number in array is: 11

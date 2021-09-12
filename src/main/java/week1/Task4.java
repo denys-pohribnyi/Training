@@ -34,3 +34,14 @@ public class Task4 {
         return true;
     }
 }
+//Please, enter some word to check palindrome
+//Hannah
+//You've entered Hannah
+//Checking...
+//This word is palindrome!!
+//---------------------------
+//Please, enter some word to check palindrome
+//qweuiyfash
+//You've entered qweuiyfash
+//Checking...
+//This word is not palindrome!
