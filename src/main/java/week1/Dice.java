@@ -32,7 +32,7 @@ public class Dice {
                 break;  // брейк для того, чтобы выйти из цикла если шаги остаются, но мы выхоим за рамки поля
             }
             currentPlace = currentPlace+sum;            // Определяем на каком мы шаге
-            System.out.println("The rolling stone shows "+sum+". You are on "+currentPlace+" place. "+leftStepsToWin+" steps left to win");
+            System.out.println("The rolling stone shows "+sum+". You are on "+currentPlace+"'th place. "+leftStepsToWin+" steps left to win");
             if(i >=4 && leftStepsToWin !=0){
                 System.out.println("Sorry, you loose, because max quantity of tries is 5 -_-");
                 break;
@@ -43,22 +43,22 @@ public class Dice {
         }
     }
 }
-//Try #1 The rolling stone shows 4. You are on 4 place. 16 steps left to win
-//Try #2 The rolling stone shows 4. You are on 8 place. 12 steps left to win
-//Try #3 The rolling stone shows 5. You are on 13 place. 7 steps left to win
-//Try #4 The rolling stone shows 4. You are on 17 place. 3 steps left to win
-//Try #5 The rolling stone shows 3. You are on 20 place. 0 steps left to win
+//Try #1 The rolling stone shows 4. You are on 4'th place. 16 steps left to win
+//Try #2 The rolling stone shows 4. You are on 8'th place. 12 steps left to win
+//Try #3 The rolling stone shows 1. You are on 9'th place. 11 steps left to win
+//Try #4 The rolling stone shows 5. You are on 14'th place. 6 steps left to win
+//Try #5 The rolling stone shows 6. You are on 20'th place. 0 steps left to win
 //Winner!
 //-------------------------------------------------------------------
-//Try #1 The rolling stone shows 3. You are on 3 place. 17 steps left to win
-//Try #2 The rolling stone shows 5. You are on 8 place. 12 steps left to win
-//Try #3 The rolling stone shows 1. You are on 9 place. 11 steps left to win
-//Try #4 The rolling stone shows 1. You are on 10 place. 10 steps left to win
-//Try #5 The rolling stone shows 6. You are on 16 place. 4 steps left to win
+//Try #1 The rolling stone shows 4. You are on 4'th place. 16 steps left to win
+//Try #2 The rolling stone shows 4. You are on 8'th place. 12 steps left to win
+//Try #3 The rolling stone shows 1. You are on 9'th place. 11 steps left to win
+//Try #4 The rolling stone shows 1. You are on 10'th place. 10 steps left to win
+//Try #5 The rolling stone shows 4. You are on 14'th place. 6 steps left to win
 //Sorry, you loose, because max quantity of tries is 5 -_-
 //-------------------------------------------------------------------
-//Try #1 The rolling stone shows 5. You are on 5 place. 15 steps left to win
-//Try #2 The rolling stone shows 6. You are on 11 place. 9 steps left to win
-//Try #3 The rolling stone shows 5. You are on 16 place. 4 steps left to win
-//Try #4 The rolling stone shows 1. You are on 17 place. 3 steps left to win
-//Try #5 You loose! Your dice is 4 but maximum range on this field is 20.
+//Try #1 The rolling stone shows 5. You are on 5'th place. 15 steps left to win
+//Try #2 The rolling stone shows 6. You are on 11'th place. 9 steps left to win
+//Try #3 The rolling stone shows 6. You are on 17'th place. 3 steps left to win
+//Try #4 The rolling stone shows 2. You are on 19'th place. 1 steps left to win
+//Try #5 You loose! Your dice is 2 but maximum range on this field is 20.
