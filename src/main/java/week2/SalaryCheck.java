@@ -2,21 +2,21 @@ package week2;
 
 public class SalaryCheck {
     public static void main(String[] args) {
-    SalesMan salesMan1 = new SalesMan();
-    salesMan1.setHours(180);                        // Отработанные часы
-    salesMan1.setExp(1);                            // Опыт работы
-    salesMan1.setSales(9);                         // Количество продаж
-    salesMan1.setResultOfSales(1500);               // Сумма продаж
-    int baseSalary = salesMan1.calcSalary(salesMan1.hours, salesMan1.baseCoeff(salesMan1.getExp()));
-        System.out.println("Base salary is equals: "+baseSalary);
-    double rate = salesMan1.baseCoeff(salesMan1.getExp());
-        System.out.println("Rate of salesman is: "+rate);
-    double bonusOrFine = salesMan1.bonusOrFine(salesMan1.getSales());
-        System.out.println("Bonus or fine: "+bonusOrFine);
-    double resultOfOverSale = salesMan1.overSales(salesMan1.getResultOfSales());
-        System.out.println("Bonus for an extra sales (15k$): "+resultOfOverSale);
-    double summary = baseSalary+bonusOrFine+resultOfOverSale;
-        System.out.println("Salary is equals: "+summary);
+        SalesMan salesMan1 = new SalesMan();
+        salesMan1.setHours(180);                        // Отработанные часы
+        salesMan1.setExp(1);                            // Опыт работы
+        salesMan1.setSales(9);                         // Количество продаж
+        salesMan1.setResultOfSales(1500);               // Сумма продаж
+        int baseSalary = salesMan1.calcSalary(salesMan1.getHours(), salesMan1.baseCoeff(salesMan1.getExp()));
+        System.out.println("Base salary is equals: " + baseSalary);
+        double rate = salesMan1.baseCoeff(salesMan1.getExp());
+        System.out.println("Rate of salesman is: " + rate);
+        double bonusOrFine = salesMan1.bonusOrFine(salesMan1.getSales());
+        System.out.println("Bonus or fine: " + bonusOrFine);
+        double resultOfOverSale = salesMan1.overSales(salesMan1.getResultOfSales());
+        System.out.println("Bonus for an extra sales (15k$): " + resultOfOverSale);
+        double summary = baseSalary + bonusOrFine + resultOfOverSale;
+        System.out.println("Salary is equals: " + summary);
     }
 }
 //B - Расчёт зарплаты агента по продажам

@@ -5,24 +5,24 @@ public class TariffPlan {
         Cell cell1 = new Cell();
         cell1.setInternetMbUsed(8500);                  // Ипользованые Мб интернета
         int paymentForOverTraffic = cell1.internetUsed(cell1.getInternetMbUsed());
-        System.out.println("Your internet payment costs: "+paymentForOverTraffic);
+        System.out.println("Your internet payment costs: " + paymentForOverTraffic);
         cell1.setCellUkr(501);                          // Минуты по Украине
         double cellsInUKR = cell1.cellsInUa(cell1.getCellUkr());
-        System.out.println("Your cells in Ukraine costs: "+cellsInUKR);
+        System.out.println("Your cells in Ukraine costs: " + cellsInUKR);
         cell1.setSms(51);                               // Количество отправленных СМС
         double smsPrice = cell1.smsDistrict(cell1.getSms());
-        System.out.println("Your sms messages costs: "+smsPrice);
+        System.out.println("Your sms messages costs: " + smsPrice);
         cell1.setCellZone1(1);                          // Звонки за границу (Зона 1)
         double foreign1 = cell1.foreignCallZone1(cell1.getCellZone1());
-        System.out.println("Your calls in Europe costs: "+foreign1);
+        System.out.println("Your calls in Europe costs: " + foreign1);
         cell1.setCellZone2(10);                         // Звонки за границу (Зона 2)
         double foreign2 = cell1.foreignCallZone2(cell1.getCellZone2());
-        System.out.println("Your calls in USA costs: "+foreign2);
+        System.out.println("Your calls in USA costs: " + foreign2);
         // Result
-        double sum = paymentForOverTraffic+cellsInUKR+smsPrice+foreign1+foreign2;
+        double sum = paymentForOverTraffic + cellsInUKR + smsPrice + foreign1 + foreign2;
         double result = sum * 1.07;                     // Сумма с налогом
         double roundedResult = (double) Math.round(result * 100) / 100;     // Округление и вывод результата в консоль
-        System.out.println("Your mobile tariff costs: ₴"+roundedResult+" per month");
+        System.out.println("Your mobile tariff costs: ₴" + roundedResult + " per month");
     }
 }
 //3 - Счет за телефон

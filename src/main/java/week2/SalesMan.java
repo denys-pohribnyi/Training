@@ -51,6 +51,7 @@ public class SalesMan {
         Integer salary = (int) dSalary; // преобразование дабл в инт
         return salary;
     }
+
     public double baseCoeff(int exp) {
         double coeff = 0;
         if (exp >= 0) {
@@ -63,21 +64,23 @@ public class SalesMan {
         }
         return coeff;
     }
+
     public double bonusOrFine(int sales) {
         Double bonFine = Double.valueOf(sales);
         double result = 0;
-        if(bonFine >= 20){
+        if (bonFine >= 20) {
             result = 250;
-        } else if(bonFine < 10){
+        } else if (bonFine < 10) {
             result = result - 150;
         } else {
             result = 0;
         }
         return result;
     }
-    public double overSales(double resultOfSales){
-        double result =0;
-        if(resultOfSales >= 15000){
+
+    public double overSales(double resultOfSales) {
+        double result = 0;
+        if (resultOfSales >= 15000) {
             result = result + 250;
         }
         return result;

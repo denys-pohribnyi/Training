@@ -15,9 +15,9 @@ public class Task4 {
         char[] array = x.toLowerCase().toCharArray();   // Интерпретируем строку в массив символов с нижнем регистре(для корректной проверки)
         boolean truefalse;                              // Проверка будет либо ДА либо НЕТ, сделаю через boolean
         truefalse = palindromeCheck(array);             // Применим метод на нашем массиве
-        if(!truefalse){                                             // Создадим условие ЕСЛИ НЕ палиндром
+        if (!truefalse) {                                             // Создадим условие ЕСЛИ НЕ палиндром
             System.out.println("This word is not palindrome!");
-        }else{                                                      // Создадим условие ЕСЛИ ДА (в остальных случаях)
+        } else {                                                      // Создадим условие ЕСЛИ ДА (в остальных случаях)
             System.out.println("This word is palindrome!!");
         }
     }
@@ -25,8 +25,8 @@ public class Task4 {
     public static boolean palindromeCheck(char[] array) {       // Создадим метод который вернет Да\Нет, на ввод принимает массив симв
         int a = 0;                                      // Сравниваем первый и последний символ
         int b = array.length - 1;
-        while(b > a){                                   // Пробежимся по массиву сравнивая первый и последний
-            if(array[a] != array[b])
+        while (b > a) {                                   // Пробежимся по массиву сравнивая первый и последний
+            if (array[a] != array[b])
                 return false;
             a++;                                        // Каждая итерация идет по массиву с концов к середине
             b--;

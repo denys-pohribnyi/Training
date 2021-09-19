@@ -59,6 +59,7 @@ public class Cell {
         }
         return result;
     }
+
     //2. Звонки по Украине до 500 минут 0,5 грн / мин после 0,75
     public double cellsInUa(int cellUkr) {
         double result = 0;
@@ -78,6 +79,7 @@ public class Cell {
         result = priceBeforeLimit + priceAfterLimit;
         return result;
     }
+
     //3. Смс до 50 шт 1 грн после 1,50
     public double smsDistrict(int sms) {
         double result = 0;
@@ -106,6 +108,7 @@ public class Cell {
         }
         return result;
     }
+
     //5. Звонки за рубеж зона 2 2 грн/мин
     public double foreignCallZone2(int cellZone2) {
         double result = 0;

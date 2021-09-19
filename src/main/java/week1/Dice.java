@@ -23,20 +23,20 @@ public class Dice {
         int currentTry = 0;
         for (int i = 0; i < arr.length; i++) {          // 5 попыток воспроизведем через цикл
             currentTry = i;
-            System.out.print("Try #"+ (currentTry+1)+" "); // Отобразим актуальную попытку
-            int r = rnd.nextInt(6)+1;             // Роллим число игральной кости
+            System.out.print("Try #" + (currentTry + 1) + " "); // Отобразим актуальную попытку
+            int r = rnd.nextInt(6) + 1;             // Роллим число игральной кости
             sum = arr[i] + r;
             leftStepsToWin = leftStepsToWin - sum;      // Определяем, сколько шагов осталось до победы
-            if(leftStepsToWin<=-1){           // Ограничим поле только в 20 шагов
-                System.out.println("You loose! Your dice is "+sum+" but maximum range on this field is 20.");
+            if (leftStepsToWin <= -1) {           // Ограничим поле только в 20 шагов
+                System.out.println("You loose! Your dice is " + sum + " but maximum range on this field is 20.");
                 break;  // брейк для того, чтобы выйти из цикла если шаги остаются, но мы выхоим за рамки поля
             }
-            currentPlace = currentPlace+sum;            // Определяем на каком мы шаге
-            System.out.println("The rolling stone shows "+sum+". You are on "+currentPlace+"'th place. "+leftStepsToWin+" steps left to win");
-            if(i >=4 && leftStepsToWin !=0){
+            currentPlace = currentPlace + sum;            // Определяем на каком мы шаге
+            System.out.println("The rolling stone shows " + sum + ". You are on " + currentPlace + "'th place. " + leftStepsToWin + " steps left to win");
+            if (i >= 4 && leftStepsToWin != 0) {
                 System.out.println("Sorry, you loose, because max quantity of tries is 5 -_-");
                 break;
-            }else if(i>=4 && leftStepsToWin == 0){
+            } else if (i >= 4 && leftStepsToWin == 0) {
                 System.out.println("Winner!");
                 break;
             }

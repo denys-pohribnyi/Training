@@ -11,10 +11,10 @@ public class Task5 {
         String s = scanner.nextLine();                      // Запишем вводимый текст в переменную
         char[] array = s.toCharArray();                     // Преобразуем в массив символов
         String reversed = "";                               // Создадим строку в которую запишем результат
-        for (int i = array.length-1; i >= 0 ; i--) {        // Пробежимся по массиву с конца
+        for (int i = array.length - 1; i >= 0; i--) {        // Пробежимся по массиву с конца
             reversed = reversed + array[i];                 // И перепишем каждый элемент на место последующего
         }
-        System.out.println("Reversed text is: "+ reversed);
+        System.out.println("Reversed text is: " + reversed);
     }
 }
 //Enter some text to reverse it
