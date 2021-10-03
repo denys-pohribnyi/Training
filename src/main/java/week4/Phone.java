@@ -1,6 +1,14 @@
 package week4;
 
 public abstract class Phone {
+    void call(){
+        System.out.println("Выполняется вызов");
+    }
+    abstract void setChargerType();
+    abstract void setOperationSystem();
+    abstract void setApplicationStore();
+
+
 }
 /*
 3.Создать абстрактный класс телефон (у него метод

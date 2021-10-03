@@ -5,9 +5,19 @@ public class TasteTester {
         BirthdayCake cakeForBirthday = new BirthdayCake();
         cakeForBirthday.setCandle(5);
         cakeForBirthday.setTaste("Super sweet taste");
+        cakeForBirthday.setPrice(350);
+
+        WeddingCake cakeForWedding = new WeddingCake();
+        cakeForWedding.setCakeTiers(3);
+        cakeForWedding.setTaste("Standard sweetness");
+        cakeForWedding.setPrice(440);
+
+        System.out.println("Taste of birthday cake is " + cakeForBirthday.getTaste() +
+                " And it has " + cakeForBirthday.getCandle() + " candles and this cake costs " +
+                cakeForBirthday.getPrice() + "₴");
+
 
     }
-
 }
 /*
 2. Cуперкласс (тоже НЕабстрактный) Cake и у него два поля, вкус и цена.
