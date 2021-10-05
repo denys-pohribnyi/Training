@@ -1,6 +1,7 @@
 package week4;
 
 public abstract class Phone {
+
     void call(){
         System.out.println("Выполняется вызов");
     }
