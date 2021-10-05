@@ -2,11 +2,14 @@ package week4;
 
 public abstract class Phone {
 
-    void call(){
+    void call() {
         System.out.println("Выполняется вызов");
     }
+
     abstract void setChargerType();
+
     abstract void setOperationSystem();
+
     abstract void setApplicationStore();
 
 

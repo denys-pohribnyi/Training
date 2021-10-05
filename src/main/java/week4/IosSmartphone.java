@@ -1,6 +1,6 @@
 package week4;
 
-public class IosSmartphone extends Phone{
+public class IosSmartphone extends Phone {
     private String chargerIOS;
     private String osIOS;
     private String applicationStoreIOS;
