@@ -3,7 +3,7 @@ package week4;
 public abstract class Phone {
 
     void call() {
-        System.out.println("Выполняется вызов");
+        System.out.println("Calling from device");
     }
 
     abstract void setChargerType();
@@ -15,7 +15,7 @@ public abstract class Phone {
 
 }
 /*
-3.Создать абстрактный класс телефон (у него метод
+3. Создать абстрактный класс телефон (у него метод
 набор номера с реализацией (просто выводит в консоль что выполняется набор
 телефона), а методы
 - Операционная Система (setChargerType()), - абстрактный

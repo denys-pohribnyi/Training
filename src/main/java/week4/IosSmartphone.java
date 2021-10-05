@@ -5,10 +5,10 @@ public class IosSmartphone extends Phone {
     private String osIOS;
     private String applicationStoreIOS;
 
-    public IosSmartphone(String chargerIOS, String osIOS, String applicationStoreIOS) {
-        this.chargerIOS = chargerIOS;
-        this.osIOS = osIOS;
-        this.applicationStoreIOS = applicationStoreIOS;
+    public IosSmartphone() {
+        setChargerType();
+        setOperationSystem();
+        setApplicationStore();
     }
 
     public String getChargerIOS() {
@@ -37,7 +37,7 @@ public class IosSmartphone extends Phone {
 
     @Override
     void setChargerType() {
-        setChargerIOS("Lightning charger");
+        setChargerIOS("Lightning");
     }
 
     @Override

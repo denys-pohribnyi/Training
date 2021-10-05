@@ -5,10 +5,10 @@ public class AndroidSmartphone extends Phone {
     private String osAOS;
     private String applicationStoreAOS;
 
-    public AndroidSmartphone(String chagrerAOS, String osAOS, String applicationStoreAOS) {
-        this.chagrerAOS = chagrerAOS;
-        this.osAOS = osAOS;
-        this.applicationStoreAOS = applicationStoreAOS;
+    public AndroidSmartphone() {
+        setOperationSystem();
+        setChargerType();
+        setApplicationStore();
     }
 
     public String getChagrerAOS() {
