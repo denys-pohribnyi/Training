@@ -34,8 +34,12 @@ public class Book {
     }
 
     public void setCoverType(String coverType) {
-        this.coverType = coverType;
-    }
+        if(coverType == "Soft" || coverType =="Hard"){
+        this.coverType = coverType;}
+        else{
+            System.out.println("Error! Cover can be Soft or Hard only");    // try
+        }
+        }
 
     public int getQuantityOfPages() {
         return quantityOfPages;
