@@ -6,6 +6,16 @@ public class Book {
     String coverType;
     int quantityOfPages;
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "price=" + price +
+                ", title='" + title + '\'' +
+                ", coverType='" + coverType + '\'' +
+                ", quantityOfPages=" + quantityOfPages +
+                '}';
+    }
+
     public Book(double price, String title, String coverType, int quantityOfPages) {
         this.price = price;
         this.title = title;
@@ -34,12 +44,7 @@ public class Book {
     }
 
     public void setCoverType(String coverType) {
-        if(coverType == "Soft" || coverType =="Hard"){
         this.coverType = coverType;}
-        else{
-            System.out.println("Error! Cover can be Soft or Hard only");    // try
-        }
-        }
 
     public int getQuantityOfPages() {
         return quantityOfPages;
